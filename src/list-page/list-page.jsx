@@ -3,7 +3,7 @@ function ListPage() {
   const appList = [
     {
       appName: "To Do App",
-      appImage: "src/appsImages/toDoAppImage.png",
+      appImage: "src/assets/toDoAppImage.png",
       appDescription:
         "This is a full ToDoApp built with React JS, CSS, and HTML.",
       appUrl: "https://mohammadshawakha.github.io/React-Js-Full-toDoApp/",
