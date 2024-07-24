@@ -1,22 +1,17 @@
 import AppCard from "../app-card/app-card";
+import { getAppData } from "../appsData/appsData";
+import { getImageUrl } from "../utils/image-util";
 function ListPage() {
-  const appList = [
-    {
-      appName: "To Do App",
-      appImage: "/appsImages/toDoAppImage.png",
-      appDescription:
-        "This is a full ToDoApp built with React JS, CSS, and HTML.",
-      appUrl: "https://mohammadshawakha.github.io/React-Js-Full-toDoApp/",
-    },
-  ];
+  const appList = getAppData();
+
   return (
     <>
       <div className="container-fluid">
         {appList.map((item, i) => (
           <AppCard
-            key={i}
+            key={item.key}
             appName={item.appName}
-            appImage={item.appImage}
+            appImage={getImageUrl(item.appImage)}
             appDescription={item.appDescription}
             appUrl={item.appUrl}
           />

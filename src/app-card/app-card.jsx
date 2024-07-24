@@ -5,9 +5,9 @@ function AppCard(props) {
         <div className="row g-0">
           <div className="col-md-4">
             <img
-              src={"/MyPortfolio" + props.appImage}
+              src={props.appImage}
               className="img-fluid rounded-start"
-              alt="App Image"
+              alt={props.appName + " Image"}
             />
           </div>
           <div className="col-md-8">
