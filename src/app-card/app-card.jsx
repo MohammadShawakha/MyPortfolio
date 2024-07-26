@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function AppCard(props) {
   return (
     <>
@@ -15,7 +16,8 @@ function AppCard(props) {
               <h5 className="card-title">{props.appName}</h5>
               <p className="card-text">{props.appDescription}</p>
               <p className="card-text">
-                try the App Live: <a href={props.appUrl}>Vist</a>
+                try the App Live:{" "}
+                <Link to={"/Portfolio/AppsPage/" + props.appName}>Vist</Link>
               </p>
             </div>
           </div>
